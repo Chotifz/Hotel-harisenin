@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="navbar bg-slate-100 text-black">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a href="index.html">Home</a></li>
+              <li>
+                <a href="about.html">About</a>
+                <ul class="p-2">
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </li>
+              <li><a href="rooms.html">Rooms</a></li>
+              <li><a href="services.html">Services</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl">Hotel Harisenin</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a href="login.html" class="btn px-8">Login</a>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Main -->
+    <div class="centerContainer col-lg-6">
+      <div class="your-order mb-30 ">
+          <h3>Your order</h3>
+          <div class="your-order-table table-responsive">
+              <table>
+                  <thead>
+                      <tr>
+                          <th class="product-name">Product</th>
+                          <th class="product-total">Total</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr class="cart_item">
+                          <td class="product-name">
+                              Vestibulum suscipit <strong class="product-quantity"> × 1</strong>
+                          </td>
+                          <td class="product-total">
+                              <span class="amount">$165.00</span>
+                          </td>
+                      </tr>
+                      <tr class="cart_item">
+                          <td class="product-name">
+                              Vestibulum dictum magna <strong class="product-quantity"> × 1</strong>
+                          </td>
+                          <td class="product-total">
+                              <span class="amount">$50.00</span>
+                          </td>
+                      </tr>
+                  </tbody>
+                  <tfoot>
+                      <tr class="cart-subtotal">
+                          <th>Cart Subtotal</th>
+                          <td><span class="amount">$215.00</span></td>
+                      </tr>
+                      <tr class="shipping">
+                          <th>Shipping</th>
+                          <td>
+                              <ul>
+                                  <li>
+                                      <input type="radio" />
+                                      <label>
+                                          Flat Rate: <span class="amount">$7.00</span>
+                                      </label>
+                                  </li>
+                                  <li>
+                                      <input type="radio" />
+                                      <label>Free Shipping:</label>
+                                  </li>
+                                  <li></li>
+                              </ul>
+                          </td>
+                      </tr>
+                      <tr class="order-total">
+                          <th>Order Total</th>
+                          <td><strong><span class="amount">$215.00</span></strong>
+                          </td>
+                      </tr>
+                  </tfoot>
+              </table>
+          </div>
+
+          <div class="payment-method">
+              <div class="order-button-payment mt-20">
+                  <button type="submit" class="bt-btn">Place order</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+    <!-- <div class="tableContainer overflow-x-auto">
+      <table class="table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Job</th>
+            <th>Favorite Color</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>1</th>
+            <td>Cy Ganderton</td>
+            <td>Quality Control Specialist</td>
+            <td>Blue</td>
+          </tr>
+          <tr>
+            <th>2</th>
+            <td>Hart Hagerty</td>
+            <td>Desktop Support Technician</td>
+            <td>Purple</td>
+          </tr>
+          <tr>
+            <th>3</th>
+            <td>Brice Swyre</td>
+            <td>Tax Accountant</td>
+            <td>Red</td>
+          </tr>
+          <tr>
+            <th>3</th>
+            <td>Brice Swyre</td>
+            <td>Tax Accountant</td>
+            <td>Red</td>
+          </tr>
+          <tr>
+            <th>3</th>
+            <td>Brice Swyre</td>
+            <td>Tax Accountant</td>
+            <td>Red</td>
+          </tr>
+          <tr>
+            <th>3</th>
+            <td>Brice Swyre</td>
+            <td>Tax Accountant</td>
+            <td>Red</td>
+          </tr>
+          <tr>
+            <th>3</th>
+            <td>Brice Swyre</td>
+            <td>Tax Accountant</td>
+            <td>Red</td>
+          </tr>
+        </tbody>
+      </table>
+    </div> -->
+    <!-- End Main -->
+
+    <!-- Footer -->
+    <footer class="w-full bottom-0 fixed bg-gray-800 text-white py-3">
+      <div class="container mx-auto text-center">
+        <p class="text-sm">
+          Copyright &copy; 2024 Hotel <span><i>Travel</i></span> doorz
+        </p>
+      </div>
+    </footer>
+    <!-- End Footer -->
+  </body>
+</html>
