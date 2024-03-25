@@ -801,6 +801,10 @@ html {
   }
 }
 
+.fill-white{
+  fill: white !important;
+}
+
 .btn {
   display: inline-flex;
   height: 3rem;
@@ -3060,3 +3064,4 @@ label {
     flex-direction: row;
   }
 
+}
