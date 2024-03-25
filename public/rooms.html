@@ -1,92 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rooms - Harisenin Hotel</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-   <!-- Header -->
-  <header>
-    <div class="navbar bg-slate-100 text-black">
-      <div class="navbar-start">
-        <div class="dropdown">
-          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="bg-white">
+    <!-- Header -->
+    <header>
+      <div class="navbar bg-slate-100 text-black">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a href="index.html">Home</a></li>
+              <li>
+                <a href="about.html">About</a>
+                <ul class="p-2">
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </li>
+              <li><a href="rooms.html">Rooms</a></li>
+              <li><a href="services.html">Services</a></li>
+            </ul>
           </div>
-          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+          <a class="btn btn-ghost text-xl">Hotel Harisenin</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
             <li><a href="index.html">Home</a></li>
-            <li>
-              <a href="about.html">About</a>
-              <ul class="p-2">
-                <li><a href="contact.html">Contact</a></li>
-                <li><a>Submenu 2</a></li>
-              </ul>
-            </li>
+            <li><a href="about.html">About</a></li>
             <li><a href="rooms.html">Rooms</a></li>
             <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
-        <a class="btn btn-ghost text-xl">Hotel Harisenin</a>
-      </div>
-      <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal px-1">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="rooms.html">Rooms</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="navbar-end">
-        <a href="login.html" class="btn px-8">Login</a>
-      </div>
-    </div>
-  </header>
-    <!-- End Header -->
-    <main>
-        <section class="w-full h-full flex justify-center bg-slate-200 mb-6 ">
-            <div class="h-full- w-[90%] my-8 ">
-                <div class="h-full flex flex-col justify-center text-center">
-                    <h1 class="text-cyan-400 text-4xl mb-4">Discover Our Rooms!</h1>
-                    <p class="text-justify text-xl font-light">
-                        Experience comfort and luxury with our range of meticulously designed rooms. Whether you're looking for a cozy retreat or upscale elegance, we have the perfect accommodation to suit your needs. From stylish standard rooms to opulent suites, each space is crafted to provide a serene haven during your stay. Enjoy modern amenities such as high-speed Wi-Fi, flat-screen TVs, and indulgent bath facilities. Our dedicated team is committed to ensuring your satisfaction and making your stay truly memorable. Explore our room options below and elevate your stay with us.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <aside class="">
-            <h1 class="text-center text-2xl">Explore</h1>
-            <div class="grid-cols-2">
-                <div id="room1" class="flex relative">
-                    <img src="" alt="">
-                    <h4>Two King Bedrooms</h4>
-                </div>
-                <div id="room2" class="flex relative">
-                    <img src="" alt="">
-                    <h4>One King Bed Executive Suite</h4>
-                </div>
-                <div id="room3" class="flex relative">
-                    <img src="" alt="">
-                    <h4>Queen Standard Room</h4>
-                </div>
-                <div id="room4" class="flex relative">
-                    <img src="" alt="">
-                </div>
-                <div id="room5 ">
-                    <img src="" alt="">
-                </div>
-                <div id="room6">
-                    <img src="" alt="">
-                </div>
-            </div>
-        </aside>
-    </main>
-    <footer class="w-full bottom-0 fixed bg-gray-800 text-white py-3 ">
-        <div class="container mx-auto text-center">
-            <p class="text-sm">Copyright &copy; 2024 Hotel <span><i>Travel</i></span> doorz </p>
+        <div class="navbar-end">
+          <a href="login.html" class="btn px-8">Login</a>
         </div>
+      </div>
+    </header>
+    <!-- End Header -->
+    <main class="">
+      <section
+        class="w-full min-h-[60vh] max-h[60vh] flex justify-center bg-red-200 mb-6 bg-cover bg-no-repeat bg-center"
+        style="background-image: url(img/bedroom-002.jpg)"
+      >
+        <div class="h-full- w-[90%] my-8 flex justify-center">
+          <div class="w-[60%] flex flex-col justify-center text-center">
+            <div
+              class="bg-gray-950 opacity-50 rounded-xl py-10 text-white hover:text-white"
+            >
+              <h1 class="text-4xl mb-4">Discover Our Rooms!</h1>
+              <p class="text-justify text-xl font-light px-10">
+                Experience comfort and luxury with our range of meticulously
+                designed rooms. Whether you're looking for a cozy retreat or
+                upscale elegance, we have the perfect accommodation to suit your
+                needs. From stylish standard rooms to opulent suites, each space
+                is crafted to provide a serene haven during your stay. Enjoy
+                modern amenities such as high-speed Wi-Fi, flat-screen TVs, and
+                indulgent bath facilities. Our dedicated team is committed to
+                ensuring your satisfaction and making your stay truly memorable.
+                Explore our room options below and elevate your stay with us.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="w-full min-h-[65vh]">
+        <h1 class="text-center text-2xl text-black font-semibold mb-4">
+          Explore
+        </h1>
+        <div
+          class="max-m[70%] h-full flex flex-wrap mx-8 justify-center gap-8 pb-20"
+        >
+          <div id="room1" class="flex flex-col">
+            <div class="w-96 h-auto text-black">
+              <div id="img" class="mb-5">
+                <img src="img/1-1024x683.jpg" alt="Hotel" class="" />
+              </div>
+              <h2 class="font-bold mb-8">Two King Bedrooms</h2>
+              <p class="mb-5 text-sm">
+                Gratify yourself with the privacy and ample space of our Two
+                King Bed guest rooms, which feature two distinct bedrooms, each
+                furnished with a luxurious king-size bed. You can also relish a
+                complimentary cup of coffee while watching your favorite shows
+                on one of our premium LED TVs. This suite ensures that everyone
+                enjoys the room they require in a truly lavish manner.
+              </p>
+              <button
+                id="payment"
+                class="bg-slate-800 hover:bg-slate-900 text-white p-3 rounded-lg text-sm font-bold"
+              >
+                Check Availability
+              </button>
+            </div>
+          </div>
+          <div id="room2" class="flex flex-col">
+            <div class="w-96 h-auto text-black">
+              <div id="img" class="mb-5">
+                <img src="img/2-1024x683.jpg" alt="Hotel" class="" />
+              </div>
+              <h2 class="font-bold mb-8">One King Bed Executive Suite</h2>
+              <p class="mb-5 text-sm">
+                Designed with luxury in mind, this remarkably roomy and
+                contemporary suite offers a delightful experience! The King
+                Executive Suite features a king-sized bed along with a distinct
+                living space and a dining/conference area, ensuring the utmost
+                in comfort. The sofa bed allows for a tranquil stay
+                accommodating up to four individuals. A Complimentary American
+                Breakfast Buffet is also included.
+              </p>
+              <button
+                id="payment"
+                class="bg-slate-800 hover:bg-slate-900 text-white p-3 rounded-lg text-sm font-bold"
+              >
+                Check Availability
+              </button>
+            </div>
+          </div>
+          <div id="room3" class="flex flex-col">
+            <div class="w-96 h-auto text-black">
+              <div id="img" class="mb-5">
+                <img src="img/3-1024x697.jpg" alt="Hotel" class="" />
+              </div>
+              <h2 class="font-bold mb-8">Queen Standard Room</h2>
+              <p class="mb-5 text-sm">
+                This room offers simplicity and comfort, featuring a Queen-sized
+                bed and suitable for up to two guests. It’s an ideal choice for
+                business travelers, thanks to its stylish desk, and it’s also
+                convenient for families, as it comes equipped with a mini
+                fridge, microwave, and coffee maker, allowing you to store and
+                reheat leftovers from local restaurants. This standard room is a
+                fantastic option for those seeking affordable travel without
+                compromising essential amenities.
+              </p>
+              <button
+                id="payment"
+                class="bg-slate-800 hover:bg-slate-900 text-white p-3 rounded-lg text-sm font-bold"
+              >
+                Check Availability
+              </button>
+            </div>
+          </div>
+          <div id="room4" class="flex flex-col">
+            <div class="w-96 h-auto text-black">
+              <div id="img" class="mb-5">
+                <img src="img/4-1024x683.jpg" alt="Hotel" class="" />
+              </div>
+              <h2 class="font-bold mb-8">Queen Standard ADA Room</h2>
+              <p class="mb-5 text-sm">
+                This room offers a simple and inviting atmosphere, featuring a
+                Queen-sized bed and suitable for two guests. It’s well-suited
+                for business travelers due to its chic work desk, and it’s also
+                convenient for families, as it provides a mini fridge,
+                microwave, and coffee maker, allowing you to save and reheat
+                restaurant leftovers. This standard room presents an excellent
+                choice for those seeking budget-friendly travel without
+                compromising essential amenities.
+              </p>
+              <button
+                id="payment"
+                class="bg-slate-800 hover:bg-slate-900 text-white p-3 rounded-lg text-sm font-bold"
+              >
+                Check Availability
+              </button>
+            </div>
+          </div>
+          <div id="room5" class="flex flex-col">
+            <div class="w-96 h-auto text-black">
+              <div id="img" class="mb-5">
+                <img src="img/5-1024x683.jpg" alt="Hotel" class="" />
+              </div>
+              <h2 class="font-bold mb-8">Two Double Bed Suite</h2>
+              <p class="mb-5 text-sm">
+                Perfect for accommodating the whole family, this suite provides
+                two double beds and a sofa bed, making it possible for up to six
+                guests to experience the best of the New York / New Jersey area.
+                Combining generous living areas with affordability, this roomy
+                and convenient suite guarantees ample space for everyone to
+                relax and unwind.
+              </p>
+              <button
+                id="payment"
+                class="bg-slate-800 hover:bg-slate-900 text-white p-3 rounded-lg text-sm font-bold"
+              >
+                Check Availability
+              </button>
+            </div>
+          </div>
+          <div id="room6" class="flex flex-col">
+            <div class="w-96 h-auto text-black">
+              <div id="img" class="mb-5">
+                <img src="img/6-1024x683.jpg" alt="Hotel" class="" />
+              </div>
+              <h2 class="font-bold mb-8">Two Double Bed Suite (ADA)</h2>
+              <p class="mb-5 text-sm">
+                The Two Double Bed ADA Suite boasts a separate living space
+                complete with a sofa bed, providing comfort for up to 4
+                occupants. This suite features an open living arrangement and
+                includes amenities like a refrigerator, microwave, and coffee
+                maker. You’ll find HDTVs in each room, and the bathroom is
+                equipped with a marble vanity and premium amenities for your
+                enjoyment.
+              </p>
+              <button
+                id="payment"
+                class="bg-slate-800 hover:bg-slate-900 text-white p-3 rounded-lg text-sm font-bold"
+              >
+                Check Availability
+              </button>
+            </div>
+          </div>
+          <div id="room7" class="flex flex-col">
+            <div class="w-96 h-auto text-black">
+              <div id="img" class="mb-5">
+                <img src="img/7-1024x683.jpg" alt="Hotel" class="" />
+              </div>
+              <h2 class="font-bold mb-8">One King Bed Suite</h2>
+              <p class="mb-5 text-sm">
+                The King Bed Suite combines both practicality and distinct
+                areas, featuring a roomy bedroom with a king-size bed and a
+                separate living space furnished with a sofa bed. This suite is
+                suitable for accommodating up to four individuals and comes with
+                premium amenities to enhance the experience for the whole
+                family.
+              </p>
+              <button
+                id="payment"
+                class="bg-slate-800 hover:bg-slate-900 text-white p-3 rounded-lg text-sm font-bold"
+              >
+                Check Availability
+              </button>
+            </div>
+          </div>
+          <div id="room8" class="flex flex-col">
+            <div class="w-96 h-auto text-black">
+              <div id="img" class="mb-5">
+                <img src="img/8-1024x683.jpg" alt="Hotel" class="" />
+              </div>
+              <h2 class="font-bold mb-8">One King Bed Suite (ADA)</h2>
+              <p class="mb-5 text-sm">
+                The King Bed Suite (ADA) provides a blend of practicality,
+                separation, and accessibility, featuring a generously sized
+                bedroom with a king-size bed and a separate living area complete
+                with a sofa bed. This suite is designed to comfortably host up
+                to four guests and is equipped with premium amenities to enhance
+                the experience for the whole family.
+              </p>
+              <button
+                id="payment"
+                class="bg-slate-800 hover:bg-slate-900 text-white p-3 rounded-lg text-sm font-bold"
+              >
+                Check Availability
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class=""></div>
+      </section>
+    </main>
+    <footer class="w-full bottom-0 fixed bg-gray-800 text-white py-4">
+      <div class="container mx-auto text-center">
+        <p class="text-sm">
+          Copyright &copy; 2024 Hotel <span><i>Travel</i></span> doorz
+        </p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

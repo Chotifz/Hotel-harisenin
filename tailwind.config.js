@@ -13,7 +13,6 @@ module.exports = {
       backgroundImage: {
         'hero-pattern': "url(/public/img/bedroom-002.jpg)",
         'hero-dua' : "url(/public/img/window-003.jpg)"
-
       }
     },
   },
